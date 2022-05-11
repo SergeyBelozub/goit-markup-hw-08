@@ -486,11 +486,6 @@ img {
     width: calc(25% - 30px);
   }
 }
-@media screen and (max-width: 1199px) {
-  .team__item {
-    margin-bottom: 30px;
-  }
-}
 
 .team-container {
   padding: 20px 0 20px 0;
