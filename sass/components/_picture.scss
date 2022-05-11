@@ -1,0 +1,32 @@
+.section__picture {
+    padding-top: 47px;
+}
+
+.content-title,
+.my-team {
+    margin-bottom: var(--fitst-text-ind);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--main-color);
+}
+
+.content-link {
+    position: relative;
+}
+
+.content-item__lable {
+    position: absolute;
+    width: 370px;
+    padding: 27px 0;
+    bottom: 0px;
+    color: var(--first-color-content);
+    text-transform: uppercase;
+    line-height: 1.14;
+    background: rgba(47, 48, 58, 0.8);
+
+    text-align: center;
+}

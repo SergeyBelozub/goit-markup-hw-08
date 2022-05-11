@@ -1,0 +1,19 @@
+// units
+@import "./utils/variables.scss";
+// reset
+@import "./reset/reset.scss";
+// section
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/content-text";
+@import "./components/picture";
+@import "./components/clients";
+@import "./components/team";
+@import "./components/footer";
+// bacdrop
+@import "./components/bacdrop";
+@import "./components/modal";
+
+// portfolio
+@import "./components/portfolio"
