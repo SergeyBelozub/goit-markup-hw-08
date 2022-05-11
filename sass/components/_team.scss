@@ -1,11 +1,13 @@
 .section__team {
     background: #f5f4fa;
-
+    margin-left: -30px;
 }
 
 .team {
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 
@@ -14,7 +16,7 @@
     box-shadow: var(--box-border-card);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--first-color-content);
-    margin-left: 30px;
+
 
     @media screen and (min-width: 480px) {
         width: calc(100% / 1 - 30px);
