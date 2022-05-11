@@ -1,5 +1,17 @@
 .section__picture {
     padding-top: 47px;
+
+
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+
+    }
+}
+
+.picture {
+    display: flex;
+    position: relative;
 }
 
 .content-title,
@@ -16,6 +28,11 @@
 
 .content-link {
     position: relative;
+}
+
+.doing-list {
+    min-width: 370px;
+
 }
 
 .content-item__lable {
