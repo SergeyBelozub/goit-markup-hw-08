@@ -12,7 +12,7 @@
 .picture {
     display: flex;
     position: relative;
-    margin-left: -30px;
+    margin-left: calc(var(--item-item-ind) * -1);
 }
 
 .content-title,

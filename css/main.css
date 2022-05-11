@@ -307,6 +307,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: calc(var(--item-item-ind) * -1);
 }
 
 .content-item__wrapper {
@@ -369,7 +370,7 @@ img {
 .picture {
   display: flex;
   position: relative;
-  margin-left: -30px;
+  margin-left: calc(var(--item-item-ind) * -1);
 }
 
 .content-title,
@@ -462,6 +463,7 @@ img {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  margin-left: calc(var(--item-item-ind) * -1);
 }
 
 .team__item {

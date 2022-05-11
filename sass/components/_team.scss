@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-
+    margin-left: calc(var(--item-item-ind) * -1);
 
 
 }
