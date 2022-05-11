@@ -1,5 +1,4 @@
 .header {
-    padding: 24px 0;
     border-bottom: 1px solid #ececec;
 }
 
@@ -12,14 +11,9 @@
         width: 480px;
     }
 
-    @media screen and (min-width: 480px) {
-        width: 480px;
+    @media screen and (min-width: 768px) {
+        width: 768px;
 
-    }
-
-    @media screen and (max-width: 1199px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -28,9 +22,16 @@
         padding-bottom: 94px;
     }
 
-
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
+.conteiner__header-padding {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
 .section {
     display: flex;

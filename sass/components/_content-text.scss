@@ -10,6 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .content-item__wrapper {
@@ -47,10 +48,14 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    @media screen and (max-width: 480px) {
+        text-align: center;
+    }
 }
 
 .content-item__subtitle {
-    max-width: 270px;
+
     line-height: 1.7;
 
     color: var(--last-color-content);
