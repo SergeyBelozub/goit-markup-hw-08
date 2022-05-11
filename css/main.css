@@ -543,6 +543,8 @@ img {
 
 .footer-bg {
   background: #2f303a;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .logo__color-white {
@@ -633,8 +635,6 @@ img {
   margin-left: 10px;
 }
 
-/* PORTOFOLIO */
-/* button */
 .backdrop {
   position: fixed;
   top: 0;
