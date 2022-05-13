@@ -184,21 +184,73 @@
 .container-mob {
     display: flex;
     flex-direction: column;
+    align-content: space-between;
     height: 100%;
     overflow: auto;
     padding-left: 40px;
 }
 
-.mob-nav-item {
-    margin-bottom: 302px;
+
+
+.mob-nav__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+.mob-title__active-blue {
+    color: var(--fitst-text-ind);
+}
+
+.mob-nav__link:not(:last-child) {
+    margin-bottom: 32px;
 }
 
 .mob-contact-item {
     margin-bottom: 64px;
 }
 
+.mob-contact__title-telefone {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+
+
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+}
+
+.mob-contact__title-imaile {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+}
+
+.mob-contact__link:not(:last-child) {
+    margin-bottom: 64px;
+}
+
 .mob-soc-item {
     display: flex;
+    justify-content: space-between;
+}
+
+.mob-soc-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
 }
 
 
