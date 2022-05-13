@@ -2,12 +2,6 @@
     background: #2f303a;
     padding: 60px 0px;
 
-    @media screen and (min-width: 1200px) {
-
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
-
 }
 
 .logo__color-white {
@@ -68,8 +62,8 @@
         align-items: baseline;
         flex-direction: row;
         justify-content: space-between;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
