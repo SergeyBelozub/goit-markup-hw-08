@@ -25,7 +25,7 @@
 
   <body>
     <header class="header">
-      <div class="container conteiner__header-padding">
+      <div class="container">
         <div class="container-nav">
           <a class="logo" href="./"
             >Web<span class="logo__color-black">Studio</span></a
@@ -33,12 +33,14 @@
           <nav class="navigation">
             <ul class="navigation__style">
               <li class="navigation__item">
-                <a href="./index.html" class="navigation__link">Студия</a>
+                <a
+                  href="./index.html"
+                  class="navigation__link  underscore "
+                  >Студия</a
+                >
               </li>
               <li class="navigation__item">
-                <a
-                  href="./portfolio.html"
-                  class="navigation__link navigation__link-active underscore navigation__underscore-active"
+                <a href="./portfolio.html" class="navigation__link underscore navigation__link-active navigation__underscore-active"
                   >Портфолио</a
                 >
               </li>
@@ -48,32 +50,33 @@
             </ul>
           </nav>
         </div>
-        <div class="navigation-item-container__margin-left">
-          <ul class="style-contact__item">
-            <li class="navigation__item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="navigation__link__color-grey"
-                ><svg class="navigation__sublink" width="16" height="12">
-                  <use href="./images/icons.svg#iconimaile"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="tel:+380961111111" class="navigation__link__color-grey"
-                ><svg class="navigation__sublink" width="12" height="16">
-                  <use href="./images/icons.svg#iconmobil"></use></svg
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-          </div>
-           <button class="button-menu" type="button" button-menu>
+
+        <ul class="style-contact__item">
+          <li class="navigation-contact__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="navigation__link__color-grey"
+              ><svg class="navigation__sublink" width="16" height="12">
+                <use href="./images/icons.svg#iconimaile"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="tel:+380961111111" class="navigation__link__color-grey"
+              ><svg class="navigation__sublink" width="12" height="16">
+                <use href="./images/icons.svg#iconmobil"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <button class="button-menu" type="button" button-menu>
           <svg class="button-menu-svg" width="24" height="16">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
+          </div>
+           
         </div>
        
         <div class="mob-menu is-hidden">
