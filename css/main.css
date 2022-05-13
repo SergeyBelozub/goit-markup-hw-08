@@ -199,16 +199,22 @@ img {
   color: var(--color-btn);
 }
 
-.mob-menu {
-  position: fixed;
-  top: 0;
-  background-color: #ffffff;
-  width: 100%;
-  z-index: 5;
-  padding-top: 48px;
-  padding-bottom: 48px;
+@media screen and (max-width: 480px) {
+  .mob-menu {
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 5;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
-
+@media screen and (min-width: 480px) {
+  .mob-menu {
+    display: none;
+  }
+}
 .navigation__link__color-green:hover .navigation__sublink {
   fill: currentColor;
 }
@@ -217,18 +223,33 @@ img {
 .button-menu-close {
   border: none;
   background-color: transparent;
-  padding: 0;
-  margin: 0;
+  display: block;
 }
 
 .button-menu-close {
   position: absolute;
   top: 10px;
-  right: 200px;
+  right: 10px;
 }
 
 .container-mob {
-  padding: 0 84px 0 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  padding-left: 40px;
+}
+
+.mob-nav-item {
+  margin-bottom: 302px;
+}
+
+.mob-contact-item {
+  margin-bottom: 64px;
+}
+
+.mob-soc-item {
+  display: flex;
 }
 
 /* подчеркивание */
