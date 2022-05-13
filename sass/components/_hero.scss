@@ -14,12 +14,27 @@
     max-width: 696px;
     margin: 0 auto;
     margin-bottom: 30px;
+
+    @media screen and (min-with: 1200px) {
+        font-weight: 900;
+        font-size: 44px;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: var(--first-color-content);
+
+    }
+
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
+    line-height: 42px;
+
+
     text-align: center;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    color: var(--first-color-content);
+    color: #FFFFFF;
 }
 
 /* button */

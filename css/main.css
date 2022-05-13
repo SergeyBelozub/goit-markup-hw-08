@@ -69,7 +69,6 @@ img {
 
 .header,
 .footer-bg {
-  padding: 21px 0 20px 0;
   border-bottom: 1px solid #ececec;
   margin: 0 auto;
 }
@@ -106,6 +105,15 @@ img {
   }
 }
 
+.header {
+  padding: 21px 0 17px 0;
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 25px 0 28px 0;
+  }
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -133,16 +141,28 @@ img {
 
 .header .container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
-.navigation .navigation__style,
+.navigation,
 .style-contact__item,
 .container-nav {
-  align-items: center;
-  display: flex;
   align-items: baseline;
+  display: flex;
+}
+
+.navigation__style {
+  display: flex;
+}
+@media screen and (max-width: 1199px) {
+  .navigation__style {
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation__style {
+    align-items: center;
+  }
 }
 
 .style-contact__item {
@@ -153,7 +173,7 @@ img {
 @media screen and (min-width: 1200px) {
   .style-contact__item {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     flex-direction: row;
   }
 }
@@ -163,10 +183,6 @@ img {
 .style-contact__item {
     display: none;
   }
-}
-
-.navigation-item-container__margin-left {
-  margin-left: 83px;
 }
 
 .navigation__style {
@@ -199,9 +215,6 @@ img {
   color: #000000;
 }
 
-.navigation__item {
-  margin-bottom: 10px;
-}
 .navigation__item:not(:last-child) {
   margin-right: var(--fitst-text-ind);
 }
@@ -219,7 +232,7 @@ img {
   color: var(--color-btn);
 }
 
-.navigation__link__color-green {
+.navigation__link__color-grey {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,8 +240,19 @@ img {
   line-height: 1.15;
   color: #757575;
 }
-.navigation__link__color-green:hover {
+.navigation__link__color-grey:hover {
   color: var(--color-btn);
+}
+
+@media screen and (max-width: 1199px) {
+  .navigation-contact__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation-contact__item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -254,7 +278,7 @@ img {
     display: none;
   }
 }
-.navigation__link__color-green:hover .navigation__sublink {
+.navigation__link__color-grey:hover .navigation__sublink {
   fill: currentColor;
 }
 
@@ -411,10 +435,21 @@ img {
   margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
+  line-height: 42px;
   text-align: center;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--first-color-content);
+  color: #FFFFFF;
+}
+@media screen and (min-with: 1200px) {
+  .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--first-color-content);
+  }
 }
 
 /* button */
@@ -525,18 +560,22 @@ img {
 
 .content-title,
 .my-team {
-  margin-bottom: var(--fitst-text-ind);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
+  margin-bottom: 30px;
   text-align: center;
+  letter-spacing: 0.03em;
   color: var(--main-color);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .content-title,
 .my-team {
-    font-size: 28px;
-    line-height: 1.18;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: var(--item-item-ind);
   }
 }
 
@@ -879,13 +918,21 @@ img {
 .modal {
   position: absolute;
   padding: 40px;
-  top: 50%;
+  top: 0;
+  left: 0;
+  top: 15%;
   left: 50%;
+  width: 90%;
   transform: rotate(0deg) translate(-50%, -50%) scale(1);
-  width: 528px;
   background-color: #ffffff;
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+  }
 }
 
 .modal-close {
@@ -917,9 +964,14 @@ img {
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  .modal-title {
+    line-height: 1.15;
+  }
 }
 
 .form-field {

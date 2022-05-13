@@ -17,18 +17,24 @@
 
 .content-title,
 .my-team {
-    margin-bottom: var(--fitst-text-ind);
+
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
+    margin-bottom: 30px;
+
     text-align: center;
+    letter-spacing: 0.03em;
 
 
     color: var(--main-color);
 
-    @media screen and (max-width: 1199px) {
-        font-size: 28px;
-        line-height: 1.18;
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: var(--item-item-ind);
     }
 
 }

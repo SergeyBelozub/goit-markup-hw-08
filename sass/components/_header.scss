@@ -1,6 +1,5 @@
 .header,
 .footer-bg {
-    padding: 21px 0 20px 0;
     border-bottom: 1px solid #ececec;
     margin: 0 auto;
 
@@ -33,6 +32,16 @@
 
 }
 
+.header {
+    padding: 21px 0 17px 0;
+
+
+    @media screen and (min-width: 1200px) {
+        padding: 25px 0 28px 0;
+    }
+}
+
+
 .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -63,19 +72,30 @@
 
 .header .container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+}
 
+.navigation,
+.style-contact__item,
+.container-nav {
 
+    align-items: baseline;
+    display: flex;
 
 }
 
-.navigation .navigation__style,
-.style-contact__item,
-.container-nav {
-    align-items: center;
+.navigation__style {
     display: flex;
-    align-items: baseline;
+
+    @media screen and(max-width:1199px) {
+        align-items: baseline;
+
+    }
+
+    @media screen and(min-width: 1200px) {
+        align-items: center;
+
+    }
 }
 
 
@@ -87,7 +107,7 @@
 
     @media screen and (min-width: 1200px) {
         display: flex;
-        align-items: baseline;
+        align-items: center;
         flex-direction: row;
 
     }
@@ -100,10 +120,6 @@
     }
 }
 
-.navigation-item-container__margin-left {
-    margin-left: 83px;
-
-}
 
 .navigation__style {
 
@@ -111,6 +127,7 @@
 
     @media screen and (min-width: 1200px) {
         margin-left: 93px;
+
     }
 }
 
@@ -135,13 +152,13 @@
     color: #000000;
 }
 
-.navigation__item {
-    margin-bottom: 10px;
 
-    &:not(:last-child) {
-        margin-right: var(--fitst-text-ind);
-    }
+
+
+.navigation__item:not(:last-child) {
+    margin-right: var(--fitst-text-ind);
 }
+
 
 
 
@@ -161,7 +178,7 @@
     }
 }
 
-.navigation__link__color-green {
+.navigation__link__color-grey {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,7 +190,21 @@
         color: var(--color-btn);
     }
 
+
 }
+
+.navigation-contact__item:not(:last-child) {
+    @media screen and(max-width: 1199px) {
+        margin-bottom: 10px;
+
+    }
+
+
+    @media screen and(min-width:1200px) {
+        margin-right: 10px;
+    }
+}
+
 
 // 
 // mob-menu
@@ -207,7 +238,7 @@
 }
 
 
-.navigation__link__color-green:hover .navigation__sublink {
+.navigation__link__color-grey:hover .navigation__sublink {
     fill: currentColor;
 }
 
