@@ -129,6 +129,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 26px 0 25px 0;
 }
 
 .navigation .navigation__style,
@@ -199,7 +200,7 @@ img {
   color: var(--color-btn);
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .button-menu-svg {
     display: none;
   }
@@ -216,7 +217,7 @@ img {
     padding-bottom: 48px;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .mob-menu {
     position: relative;
     display: none;
@@ -300,6 +301,16 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+
+.mob-soc-link:after {
+  content: " ";
+  width: 22px;
+  height: 0px;
+  left: 135px;
+  top: 726px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }
 
 /* подчеркивание */
