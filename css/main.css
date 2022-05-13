@@ -199,7 +199,12 @@ img {
   color: var(--color-btn);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 767px) {
+  .button-menu-svg {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
   .mob-menu {
     position: fixed;
     top: 0;
@@ -211,7 +216,7 @@ img {
     padding-bottom: 48px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .mob-menu {
     display: none;
   }
