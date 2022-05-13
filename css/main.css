@@ -139,6 +139,12 @@ img {
   display: flex;
 }
 
+.style-contact__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 @media screen and (max-width: 767px) {
   .navigation,
 .style-contact__item {
@@ -147,7 +153,12 @@ img {
 }
 
 .navigation__style {
-  margin-left: 93px;
+  margin-left: 88px;
+}
+@media screen and (min-width: 1200px) {
+  .navigation__style {
+    margin-left: 93px;
+  }
 }
 
 .logo {
@@ -232,6 +243,14 @@ img {
   border: none;
   background-color: transparent;
   display: block;
+}
+
+.menu-svg {
+  fill: #000000;
+}
+
+.menu-svg:hover {
+  fill: #2196F3;
 }
 
 .button-menu-close {
