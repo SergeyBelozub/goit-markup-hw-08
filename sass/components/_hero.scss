@@ -17,7 +17,7 @@
             url(../images/studio-mobile/Header2x-min.jpg);
     }
 
-    @include tablet {
+    @media screen and (min-width:768px) {
         padding: 280px 0 234px 70px;
         background-image: linear-gradient(rgba(25, 28, 38, 0.2),
                 rgba(25, 28, 38, 0.2)),
@@ -32,7 +32,7 @@
         }
     }
 
-    @include desktop {
+    @media screen and (min-width:1200px) {
         padding: 272px 0 206px 96px;
         background-image: linear-gradient(rgba(25, 28, 38, 0.2),
                 rgba(25, 28, 38, 0.2)),

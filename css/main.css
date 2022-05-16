@@ -282,11 +282,6 @@ img {
   fill: currentColor;
 }
 
-@media screen and (min-width: 768px) {
-  .button-menu-svg {
-    display: none;
-  }
-}
 @media screen and (max-width: 767px) {
   .mob-menu {
     position: fixed;
@@ -299,31 +294,12 @@ img {
     padding-bottom: 48px;
   }
 }
-@media screen and (min-width: 768px) {
-  .mob-menu {
-    position: relative;
-    display: none;
-  }
-}
-.button-menu,
-.button-menu-close {
-  border: none;
-  background-color: transparent;
-  display: block;
-}
-
 .menu-svg {
   fill: #000000;
 }
 
 .menu-svg:hover {
   fill: #2196F3;
-}
-
-.button-menu-close {
-  position: fixed;
-  top: 10px;
-  right: 10px;
 }
 
 .container-mob {
@@ -408,6 +384,37 @@ img {
   transform: rotate(90deg);
 }
 
+.menu-open-btn,
+.menu-close-btn {
+  border: none;
+  background-color: transparent;
+  display: inline-flex;
+}
+
+.menu-open-btn,
+.mob-menu {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .menu-open-btn,
+.mob-menu {
+    display: none;
+  }
+}
+
+.menu-close-btn {
+  position: absolute;
+  right: 100px;
+}
+.menu-close-btn:hover, .menu-close-btn:focus {
+  fill: #2196F3;
+}
+
+.menu-open-btn:hover,
+.menu-open-btn:focus {
+  fill: #2196F3;
+}
+
 .hero {
   max-width: 1600px;
   margin: 0 auto;
@@ -416,6 +423,33 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/studio-mobile/Header2x-min.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 280px 0 234px 70px;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/studio-tablet/Header.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/studio-tablet/Header2x-min.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 272px 0 206px 96px;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/studio-desktop/hero.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/studio-desktop/hero-2x-min.jpg);
+  }
 }
 
 .hero-title {
@@ -906,10 +940,9 @@ img {
 .modal {
   position: absolute;
   padding: 40px;
-  top: 0;
-  left: 0;
   top: 50%;
   left: 50%;
+  width: 100%;
   max-width: 528px;
   transform: rotate(0deg) translate(-50%, -50%) scale(1);
   background-color: #ffffff;
