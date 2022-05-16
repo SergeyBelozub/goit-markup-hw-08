@@ -404,7 +404,7 @@ img {
 
 .menu-close-btn {
   position: fixed;
-  right: 20px;
+  right: 50px;
   top: 20px;
 }
 .menu-close-btn:hover, .menu-close-btn:focus {
