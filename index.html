@@ -92,7 +92,7 @@
               </button>
               <ul class="mob-nav-item">
                 <li class="mob-nav__link">
-                  <a href="" class="mob-nav__title">Студия</a>
+                  <a href="" class="mob-nav__title navigation__link-active">Студия</a>
                 </li>
                 <li class="mob-nav__link">
                   <a href="./portfolio.html" class="mob-nav__title"
@@ -217,27 +217,50 @@
           <h2 class="content-title">Чем мы занимаемся</h2>
           <ul class="picture">
             <li class="content-item__link doing-list">
-              <img
-                src="./sass/images/boxone.jpg"
-                alt="работает на пк"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./sass/images/studio-desktop/img-box-1-min.jpg 1x,
+                    ./sass/images/studio-desktop/2x/box-1-min.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./sass/images/studio-desktop/img-box-1-min.jpg"
+                  alt="работает на пк"
+                />
+              </picture>
               <p class="content-item__lable">Десктопные приложения</p>
             </li>
             <li class="content-item__link doing-list">
-              <img
-                src="./sass/images/boxtwo.jpg"
-                alt="тестирует моб.приложения"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./sass/images/studio-desktop/img-box-2-min.jpg 1x,
+                    ./sass/images/studio-desktop/2x/box-2-min.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./sass/images/studio-desktop/img-box-2-min.jpg"
+                  alt="работает на пк"
+                />
+              </picture>
               <p class="content-item__lable">Мобильные приложения</p>
             </li>
             <li class="content-item__link doing-list">
-              <img
-                src="./sass/images/boxthree.jpg"
-                alt="работает с палитрой цветов"
-                width="370"
-              />
+                <source
+                  srcset="
+                    ./sass/images/studio-desktop/img-box-3-min.jpg 1x,
+                    ./sass/images/studio-desktop/2x/box-3-min.jpg  2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./sass/images/studio-desktop/img-box-3-min.jpg"
+                  alt="работает с палитрой цветов"
+                />
+              </picture>
               <p class="content-item__lable">Дизайнерские решения</p>
             </li>
           </ul>
@@ -249,8 +272,29 @@
         <div class="container">
           <h2 class="content-title">Наша команда</h2>
           <ul class="team">
-            <li class="team__item">
-              <img src="./sass/images/img.jpg" alt="brown shirt" width="270" />
+            <li class="team__item"><picture>
+                <source
+                  srcset="
+                    ./sass/images/studio-desktop/desktop-cards/card1-min.jpg    1x,
+                    ./sass/images/studio-desktop/desktop-cards/card1-2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                <source
+                  srcset="
+                    ./sass/images/studio-tablet/tablet/card1-min.jpg    1x,
+                    ./sass/images/studio-tablet/tablet/card1-2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./sass/images/studio-mobile/img1-min.jpg   1x,
+                    ./sass/images/studio-mobile/img1-2x-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./sass/images/studio-desktop/img-car-1-min.jpg" alt="black jacket" width="270" />
+              </picture>
               <div class="team-container">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__subtitle" lang="en">Product Designer</p>
@@ -258,9 +302,7 @@
                   <li class="team-icon__list">
                     <a href="" class="team-icon__link">
                       <svg class="team-icon__sublink" width="20" height="20">
-                        <use
-                          href="./sass/images/icons.svg#icon-instagram"
-                        ></use>
+                        <use href="./sass/images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -288,12 +330,30 @@
                 </ul>
               </div>
             </li>
-            <li class="team__item">
-              <img
-                src="./sass/images/imgtwo.jpg"
-                alt="black jacket"
-                width="270"
-              />
+            <li class="team__item"><picture>
+                <source
+                  srcset="
+                    ./sass/images/studio-desktop/desktop-cards/card2-min.jpg    1x,
+                    ./sass/images/studio-desktop/desktop-cards/card2-2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./sass/images/studio-tablet/tablet/card2-min.jpg    1x,
+                    ./sass/images/studio-tablet/tablet/card2-2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./sass/images/studio-mobile/img2-min.jpg   1x,
+                    ./sass/images/studio-mobile/img2-2x-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./sass/images/studio-desktop/desktop-cards/card2-min.jpg" alt="black jacket" width="270" />
+              </picture>
               <div class="team-container">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__subtitle" lang="en">Frontend Developer</p>
@@ -301,9 +361,7 @@
                   <li class="team-icon__list">
                     <a href="" class="team-icon__link">
                       <svg class="team-icon__sublink" width="20" height="20">
-                        <use
-                          href="./sass/images/icons.svg#icon-instagram"
-                        ></use>
+                        <use href="./sass/images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -331,12 +389,31 @@
                 </ul>
               </div>
             </li>
-            <li class="team__item">
-              <img
-                src="./sass/images/imgthree.jpg"
-                alt="blue shirt"
-                width="270"
-              />
+            <li class="team__item"><picture>
+                <source
+                  srcset="
+                    ./sass/images/studio-desktop/desktop-cards/card3-min.jpg    1x,
+                    ./sass/images/studio-desktop/desktop-cards/card3-2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./sass/images/studio-tablet/tablet/card3-min.jpg    1x,
+                    ./sass/images/studio-tablet/tablet/card3-2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./sass/images/studio-mobile/img3-min.jpg   1x,
+                    ./sass/images/studio-mobile/img3-2x-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./sass/images/studio-desktop/desktop-cards/card3-min.jpg" alt="black jacket" width="270" />
+              </picture>
+    
               <div class="team-container">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__subtitle" lang="en">Marketing</p>
@@ -344,9 +421,7 @@
                   <li class="team-icon__list">
                     <a href="" class="team-icon__link">
                       <svg class="team-icon__sublink" width="20" height="20">
-                        <use
-                          href="./sass/images/icons.svg#icon-instagram"
-                        ></use>
+                        <use href="./sass/images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -374,12 +449,31 @@
                 </ul>
               </div>
             </li>
-            <li class="team__item">
-              <img
-                src="./sass/images/imgfive.jpg"
-                alt="black T-shirt"
-                width="270"
-              />
+            <li class="team__item"><picture>
+                <source
+                  srcset="
+                    ./sass/images/studio-desktop/desktop-cards/card4-min.jpg    1x,
+                    ./sass/images/studio-desktop/desktop-cards/card4-2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./sass/images/studio-tablet/tablet/card4-min.jpg    1x,
+                    ./sass/images/studio-tablet/tablet/card4-2x-min.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./sass/images/studio-mobile/img4-min.jpg   1x,
+                    ./sass/images/studio-mobile/img4-2x-min.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/studio-desktop/desktop-cards/card4-min.jpg" alt="black T-shirt" width="270" />
+              </picture>
+              
               <div class="team-container">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__subtitle" lang="en">UI Designer</p>
@@ -387,9 +481,7 @@
                   <li class="team-icon__list">
                     <a href="" class="team-icon__link">
                       <svg class="team-icon__sublink" width="20" height="20">
-                        <use
-                          href="./sass/images/icons.svg#icon-instagram"
-                        ></use>
+                        <use href="./sass/images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>

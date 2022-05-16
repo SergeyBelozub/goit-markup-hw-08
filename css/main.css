@@ -274,10 +274,6 @@ img {
   opacity: 1;
 }
 
-.navigation__link-active {
-  color: var(--color-btn);
-}
-
 .navigation__sublink {
   margin-right: 10px;
   fill: #757575;
@@ -393,6 +389,10 @@ img {
   color: #2196F3;
 }
 
+.navigation__link-active {
+  color: #2196F3;
+}
+
 .mob-soc-item {
   display: flex;
   align-items: center;
@@ -412,7 +412,7 @@ img {
   max-width: 1600px;
   margin: 0 auto;
   padding: 200px 0 200px 0;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio-desktop/Img-min.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio-desktop/hero-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -910,7 +910,7 @@ img {
   left: 0;
   top: 50%;
   left: 50%;
-  width: 90%;
+  max-width: 528px;
   transform: rotate(0deg) translate(-50%, -50%) scale(1);
   background-color: #ffffff;
   border-radius: 4px;

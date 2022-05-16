@@ -193,18 +193,9 @@
     }
 }
 
-
-// 
-// mob-menu
-
-
 .navigation__link__color-grey:hover .navigation__sublink {
     fill: currentColor;
 }
-
-
-
-
 
 /* подчеркивание */
 .underscore {
@@ -245,13 +236,6 @@
 .navigation__underscore-active.active {
     opacity: 1;
 }
-
-.navigation__link-active {
-    color: var(--color-btn);
-}
-
-
-
 
 .navigation__sublink {
     margin-right: 10px;
