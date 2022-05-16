@@ -141,8 +141,9 @@
 }
 
 .menu-close-btn {
-    position: absolute;
-    right: 100px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
 
     &:hover,
     &:focus {
