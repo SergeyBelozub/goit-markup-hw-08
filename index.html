@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>document</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +22,6 @@
     />
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
-    
   </head>
   <!--Top header  -->
   <body>
@@ -56,7 +54,11 @@
         </div>
         <div class="mob-menu-button">
           <button class="menu-open-btn" type="button">
-            <svg  width="24" height="16" aria-label="Переключатель мобильного меню">
+            <svg
+              width="24"
+              height="16"
+              aria-label="Переключатель мобильного меню"
+            >
               <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
@@ -83,16 +85,24 @@
 
         <div class="mob-menu is-hidden">
           <button class="menu-close-btn" type="button">
-            <svg  width="24" height="16" aria-label="Переключатель мобильного меню">
-              <use class="icon-cross" href="./images/icons.svg#icon-close"></use>
+            <svg
+              width="24"
+              height="16"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-cross"
+                href="./images/icons.svg#icon-close"
+              ></use>
             </svg>
           </button>
           <div class="container-mob">
             <div class="mob-container__spase-between">
-              
               <ul class="mob-nav-item">
                 <li class="mob-nav__link">
-                  <a href="" class="mob-nav__title navigation__link-active">Студия</a>
+                  <a href="" class="mob-nav__title navigation__link-active"
+                    >Студия</a
+                  >
                 </li>
                 <li class="mob-nav__link">
                   <a href="./portfolio.html" class="mob-nav__title"
@@ -221,7 +231,7 @@
                 <source
                   srcset="
                     ./images/studio-desktop/img-box-1-min.jpg 1x,
-                    .images/studio-desktop/2x/box-1-min.jpg  2x
+                    .images/studio-desktop/2x/box-1-min.jpg   2x
                   "
                   media="(min-width: 1200px)"
                 />
@@ -249,6 +259,7 @@
               <p class="content-item__lable">Мобильные приложения</p>
             </li>
             <li class="content-item__link doing-list">
+              <picture>
                 <source
                   srcset="
                     ./images/studio-desktop/img-box-3-min.jpg 1x,
@@ -272,13 +283,15 @@
         <div class="container">
           <h2 class="content-title">Наша команда</h2>
           <ul class="team">
-            <li class="team__item"><picture>
+            <li class="team__item">
+              <picture>
                 <source
                   srcset="
                     ./images/studio-desktop/desktop-cards/card1-min.jpg    1x,
                     ./images/studio-desktop/desktop-cards/card1-2x-min.jpg 2x
                   "
                   media="(min-width: 1200px)"
+                />
                 <source
                   srcset="
                     ./images/studio-tablet/tablet/card1-min.jpg    1x,
@@ -288,12 +301,16 @@
                 />
                 <source
                   srcset="
-                    ./images/studio-mobile/img1-min.jpg   1x,
+                    ./images/studio-mobile/img1-min.jpg    1x,
                     ./images/studio-mobile/img1-2x-min.jpg 2x
                   "
                   media="(min-width: 320px)"
                 />
-                <img src="./images/studio-desktop/img-car-1-min.jpg" alt="black jacket" width="270" />
+                <img
+                  src="./images/studio-desktop/img-car-1-min.jpg"
+                  alt="black jacket"
+                  width="270"
+                />
               </picture>
               <div class="team-container">
                 <h3 class="team__title">Игорь Демьяненко</h3>
@@ -330,7 +347,8 @@
                 </ul>
               </div>
             </li>
-            <li class="team__item"><picture>
+            <li class="team__item">
+              <picture>
                 <source
                   srcset="
                     ./images/studio-desktop/desktop-cards/card2-min.jpg    1x,
@@ -347,12 +365,16 @@
                 />
                 <source
                   srcset="
-                    ./images/studio-mobile/img2-min.jpg   1x,
+                    ./images/studio-mobile/img2-min.jpg    1x,
                     ./images/studio-mobile/img2-2x-min.jpg 2x
                   "
                   media="(min-width: 320px)"
                 />
-                <img src="./images/studio-desktop/desktop-cards/card2-min.jpg" alt="black jacket" width="270" />
+                <img
+                  src="./images/studio-desktop/desktop-cards/card2-min.jpg"
+                  alt="black jacket"
+                  width="270"
+                />
               </picture>
               <div class="team-container">
                 <h3 class="team__title">Ольга Репина</h3>
@@ -389,7 +411,8 @@
                 </ul>
               </div>
             </li>
-            <li class="team__item"><picture>
+            <li class="team__item">
+              <picture>
                 <source
                   srcset="
                     ./images/studio-desktop/desktop-cards/card3-min.jpg    1x,
@@ -406,14 +429,18 @@
                 />
                 <source
                   srcset="
-                    ./images/studio-mobile/img3-min.jpg   1x,
+                    ./images/studio-mobile/img3-min.jpg    1x,
                     ./images/studio-mobile/img3-2x-min.jpg 2x
                   "
                   media="(min-width: 320px)"
                 />
-                <img src="./images/studio-desktop/desktop-cards/card3-min.jpg" alt="black jacket" width="270" />
+                <img
+                  src="./images/studio-desktop/desktop-cards/card3-min.jpg"
+                  alt="black jacket"
+                  width="270"
+                />
               </picture>
-    
+
               <div class="team-container">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__subtitle" lang="en">Marketing</p>
@@ -449,7 +476,8 @@
                 </ul>
               </div>
             </li>
-            <li class="team__item"><picture>
+            <li class="team__item">
+              <picture>
                 <source
                   srcset="
                     ./images/studio-desktop/desktop-cards/card4-min.jpg    1x,
@@ -459,21 +487,25 @@
                 />
                 <source
                   srcset="
-                    ./images/studio-tablet/tablet/card4-min.jpg    1x,
+                    ./images/studio-tablet/tablet/card4-min.jpg   1x,
                     ./images/studio-tablet/tablet/car4-2x-min.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/studio-mobile/img4-min.jpg   1x,
+                    ./images/studio-mobile/img4-min.jpg    1x,
                     ./images/studio-mobile/img4-2x-min.jpg 2x
                   "
                   media="(min-width: 320px)"
                 />
-                <img src="./images/studio-desktop/desktop-cards/card4-min.jpg" alt="black T-shirt" width="270" />
+                <img
+                  src="./images/studio-desktop/desktop-cards/card4-min.jpg"
+                  alt="black T-shirt"
+                  width="270"
+                />
               </picture>
-              
+
               <div class="team-container">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__subtitle" lang="en">UI Designer</p>
