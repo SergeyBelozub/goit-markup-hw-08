@@ -545,8 +545,16 @@ img {
   }
 }
 
-.content-item__link:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 479px) {
+  .content-item__link:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .content-item__link:nth-last-child(n+3) {
+    margin-bottom: 30px;
+  }
 }
 
 .content-item__title {

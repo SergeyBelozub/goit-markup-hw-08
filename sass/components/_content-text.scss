@@ -44,8 +44,18 @@
 }
 
 .content-item__link:not(:last-child) {
-    margin-bottom: 30px;
+    @media screen and (max-width: 479px) {
+        margin-bottom: 30px;
+    }
 }
+
+.content-item__link:nth-last-child(n+3) {
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 30px;
+    }
+}
+
+
 
 .content-item__title {
     margin-bottom: 10px;
@@ -64,4 +74,6 @@
     line-height: 1.7;
 
     color: var(--last-color-content);
+
+
 }
