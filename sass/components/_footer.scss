@@ -15,12 +15,17 @@
 .contact-item {
     display: flex;
     justify-content: center;
-    margin-bottom: 8px;
 
     @media screen and (min-width: 1200px) {
         display: flex;
         justify-content: flex-start;
     }
+
+
+}
+
+.contact-item:not(:last-child) {
+    margin-bottom: 8px;
 }
 
 .contant-list {
@@ -40,12 +45,6 @@
 }
 
 .footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-
-
     @media screen and (min-width: 1200px) {
 
         display: flex;
@@ -68,22 +67,37 @@
 }
 
 .conteiner-footer__adress-spase-betwen {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 60px;
+
     }
 
     @media screen and (min-width: 1200px) {
         align-items: baseline;
+        margin-bottom: 0px;
     }
 
 }
 
+.conteiner-footer-adress {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        margin-bottom: 0px;
+    }
+}
+
 .social,
 .conteiner-footer-adress {
-    margin-bottom: 60px;
-    display: bolck;
-
     @media screen and (min-width: 1200px) {
 
         margin-bottom: 0px;

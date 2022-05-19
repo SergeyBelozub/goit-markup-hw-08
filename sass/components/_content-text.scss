@@ -27,6 +27,7 @@
 .content-item__link {
     margin-left: 30px;
 
+
     @media screen and (min-width: 480px) {
         width: calc(100% / 1 - 30px);
 
@@ -40,6 +41,10 @@
     @media screen and (min-width: 1200px) {
         width: calc(100% / 4 - 30px);
     }
+}
+
+.content-item__link:not(:last-child) {
+    margin-bottom: 30px;
 }
 
 .content-item__title {
